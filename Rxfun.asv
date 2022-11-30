@@ -1,0 +1,12 @@
+%thetast: steering angle
+function[Rx_out]= Rxfun(insig, thetast,rx,lambda)
+    
+psicurr= computepsi(rx,lambda,thetast);
+Rxmanifold= exp(-1i.*psicurr);
+
+inter_sig= insig.*Rxmanifold;
+w=ones(length(rx),1);
+
+Rx_out= 
+
+end
